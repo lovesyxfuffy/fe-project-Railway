@@ -1,0 +1,170 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    min-width: 1024px;
+    background-color: #ffffff
+}
+
+a {
+    text-decoration: none
+}
+
+.el-submenu .el-menu-item {
+    min-width: 0;
+}
+
+body #app {
+    height: 100%;
+}
+
+body #app .con-wrap {
+    padding-left: 220px
+}
+
+body #app .con-wrap.conCollapse {
+    padding-left: 64px;
+    position: relative;
+    z-index: 6;
+}
+
+body #app .con-wrap .page-component-wrap {
+    padding: 15px
+}
+
+#light-wrap .el-steps .el-step.is-horizontal .el-step__head .el-step__icon {
+    cursor: pointer;
+}
+
+.el-menu--collapse .el-submenu .el-submenu__title span {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+}
+
+.el-menu--collapse .el-submenu .el-submenu__icon-arrow {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+    display: inline-block;
+}
+
+/* .el-submenu__title:hover , .el-menu-item:hover{
+    background-color: rgb(32, 160, 255) !important;
+    color: white !important;
+    font-size: 16px !important
+}
+
+.el-submenu__title .el-submenu__icon-arrow.el-icon-arrow-down:hover {
+    color: white !important
+} */
+
+.v-select .selected-tag {
+    color: #409EFF !important;
+    background-color: rgba(32, 160, 255, .1) !important;
+    border: 1px solid rgba(32, 160, 255, .2) !important;
+}
+
+.v-select .selected-tag .close {
+    color: #20a0ff !important
+}
+
+.v-select .selected-tag .close:hover {
+    color: rebeccapurple !important
+}
+
+.select-wrap .dropdown-menu li:hover {
+    background-color: rebeccapurple !important
+}
+
+.v-select .dropdown-menu > .highlight > a {
+    /*
+     * required to override bootstrap 3's
+     * .dropdown-menu > li > a:hover {} styles
+     */
+    background: #409EFF !important;
+    color: #fff;
+}
+
+[class^="icon"],
+[class*=" icon"] /*这里有空格*/
+{
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.el-table th {
+    background-color: #eef1f6;
+    color: #000;
+    min-width: 0;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    position: relative;
+    margin: 10px 10px;
+}
+.el-table__header-wrapper{
+    height: 50px;
+}
+
+.el-table td, .el-table th.is-leaf {
+    border-right: 1px solid #dfe6ec;
+    text-overflow: ellipsis;
+}
+.el-tag {
+    outline: medium;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+}
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+.d2h-code-side-linenumber , .d2h-code-linenumber{
+    position: relative !important;
+}
+
+.el-message {
+    max-width: 60%;
+}
+
+.el-message .el-message__content {
+    overflow-wrap: break-word;
+    width: 98%;
+}
+
+.el-pager li.active, .el-select-dropdown__item.selected {
+    color: #0a7bc7
+}
+
+.el-select .el-input.is-focus .el-input__inner {
+    border-color: #0a7bc7;
+}
+.el-pagination .btn-next .el-icon, .el-pagination .btn-prev .el-icon:hover {
+    color: #0a7bc7
+}
+.el-pagination__editor.el-input .el-input__inner:focus {
+    border-color: #0a7bc7;
+}

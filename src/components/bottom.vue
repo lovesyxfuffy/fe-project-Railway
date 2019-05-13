@@ -1,0 +1,137 @@
+<template>
+    <el-main class="bottom-wrap" :style="`width:${$constants.containerWidth};margin: 0 auto;`">
+        <el-row>
+            <el-col :span="12" class="ret">
+                <p>人才招聘</p>
+                <el-row class="bottom-text" v-for="(item, index) in routeList" :key="index">
+                    <el-col @click.native="toRoute(item.query)">
+                        {{item.label}}
+                    </el-col>
+                </el-row>
+            </el-col>
+            <el-col :span="12" class="contact">
+                <p>联系我们</p>
+                <ul class="contact_detail">
+                    <li v-for="(item, key, index) in contactList" :key="index">
+                        <i :class="item.icon"></i> <span class="detail_text">{{ item.text}}</span> <span class="detail_content">{{info[key]}}</span>
+                    </li>
+                </ul>
+            </el-col>
+        </el-row>
+    </el-main>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            routeList: [
+                {
+                    label: '人才战略',
+                    query: 'talent'
+                },
+                {
+                    label: '招聘信息',
+                    query: 'hiring'
+                },
+                {
+                    label: '教育培训',
+                    query: 'education'
+                }
+            ],
+            info: {
+                address: '',
+                telephone: '',
+                email: '',
+                fax: ''
+            },
+            contactList: {
+                address: {
+                    icon: 'icondizhi',
+                    text: '地址',
+                    // content: this.info.address
+                },
+                telephone: {
+                    icon: 'icondianhua',
+                    text: '电话',
+                    // content: this.info.telephone
+                },
+                email: {
+                    icon: 'iconyouxiang',
+                    text: '邮箱',
+                    // content: this.info.email
+                },
+                fax: {
+                    icon: 'iconchuanzhen',
+                    text: '传真',
+                    // content: this.info.fax
+                }
+            }
+        }
+    },
+    created() {
+        this.getInfo()
+    },
+    methods: {
+        toRoute(query) {
+            this.$router.push({
+                name: 'careerPlanning',
+                query: {
+                    type: query
+                }
+            })
+        },
+        getInfo() {
+            this.$models.home.getConfig()
+            .then(res => {
+                if(res.data.status === 1) {
+                    Object.assign(this.info, {
+                        address: res.data.data.address[0],
+                        telephone: res.data.data.telephone[0],
+                        email: res.data.data.email[0],
+                        fax: res.data.data.fax[0]
+                    })
+                }
+            })
+        }
+    }
+}
+</script>
+
+<style lang="less">
+.bottom-wrap {
+    border-top: 1px solid #888888;
+    .ret, .contact {
+        p {
+            font-size: 20px;
+            font-weight: bolder;
+            color: #333333;
+        }
+    }
+    .contact_detail {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1;
+        li {
+            line-height: 40px;
+        }
+        i {
+            font-size: 18px;
+        }
+        .detail_text {
+            padding: 0 20px;
+        }
+        .detail_content {
+            color: #665555;
+        }
+    }
+    .bottom-text {
+        color: #665555;
+        cursor: pointer;
+        line-height: 40px;
+    }
+}
+</style>
