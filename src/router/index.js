@@ -76,11 +76,29 @@ const getRouter = (module) => {
                         meta: {title: '精品工程'},
                         component: () => import('@pages/honor/excellentList')
                     },
+                    // {
+                    //     name: 'careerPlanning',
+                    //     path: 'careerPlanning',
+                    //     meta: {title: '职业规划'},
+                    //     component: () => import('@pages/careerPlanning')
+                    // },
                     {
-                        name: 'careerPlanning',
-                        path: 'careerPlanning',
-                        meta: {title: '职业规划'},
-                        component: () => import('@pages/careerPlanning')
+                        name: 'talent',
+                        path: 'about/talent',
+                        meta: {title: '人才战略'},
+                        component: () => import('@components/details')
+                    },
+                    {
+                        name: 'hiring',
+                        path: 'hiring',
+                        meta: {title: '招聘信息'},
+                        component: () => import('@pages/news/newsList')
+                    },
+                    {
+                        name: 'education',
+                        path: 'education',
+                        meta: {title: '教育培训'},
+                        component: () => import('@pages/news/newsList')
                     },
                     {
                         name: 'information',

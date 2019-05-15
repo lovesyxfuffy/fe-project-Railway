@@ -80,7 +80,21 @@ export default {
                 },
                 {
                     name: '职业规划',
-                    route: 'careerPlanning'
+                    route: 'careerPlanning',
+                    children: [
+                        {
+                            name: '人才战略',
+                            route: 'talent'
+                        },
+                        {
+                            name: '招聘信息',
+                            route: 'hiring'
+                        },
+                        {
+                            name: '教育培训',
+                            route: 'education'
+                        }
+                    ]
                 }
             ]
         }

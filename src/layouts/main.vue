@@ -86,13 +86,12 @@ export default {
                         }
                     }
                 },
-                newsList: {
+                news: {
                     '新闻中心': {
                         route: false,
                         children: {
                             '新闻列表': {
-                                route: 'newsList',
-                                children: false
+                                route: 'newsList'
                             }
                         }
                     }
@@ -108,12 +107,53 @@ export default {
                         }
                     }
                 },
+                layout: {
+                    '业务领域': {
+                        route: false,
+                        children: {
+                            '经营布局': {
+                                route: 'layout',
+                                children: false
+                            }
+                        }
+                    }
+                },
                 excellentList: {
                     '业绩荣誉': {
                         route: false,
                         children: {
                             '精品工程': {
                                 route: 'excellentList'
+                            }
+                        }
+                    }
+                },
+                talent: {
+                    '职业规划': {
+                        route: false,
+                        children: {
+                            '人才战略': {
+                                route: 'talent'
+                            }
+                        }
+                    }
+                },
+                hiring: {
+                    '职业规划': {
+                        route: false,
+                        children: {
+                            '招聘信息': {
+                                route: 'hiring'
+                            }
+                        }
+                    }
+                },
+                education: {
+                    '职业规划': {
+                        route: false,
+                        children: {
+                            '教育培训': {
+                                route: 'education'
                             }
                         }
                     }

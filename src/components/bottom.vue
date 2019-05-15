@@ -75,10 +75,7 @@ export default {
     methods: {
         toRoute(query) {
             this.$router.push({
-                name: 'careerPlanning',
-                query: {
-                    type: query
-                }
+                name: query
             })
         },
         getInfo() {
