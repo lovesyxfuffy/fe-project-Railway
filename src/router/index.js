@@ -7,7 +7,7 @@ Vue.use(Router)
 const publicPath = '/frontView'
 const getRouter = (module) => {
     const router = new Router({
-        // mode: 'history',
+        mode: 'history',
         routes: [
             {
                 name: 'root',
