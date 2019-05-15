@@ -47,7 +47,7 @@ export default {
                 }).catch((err) => {
                     console.log(err)
                 });
-            }else {
+            } else {
                 this.$models.article.getArticleContent(this.$route.query.id)
                 .then((result) => {
                     console.log(result.data.data)

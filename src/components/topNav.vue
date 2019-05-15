@@ -14,7 +14,7 @@
                 {{item.name}}
             </el-menu-item>
             <template v-else>
-                <el-submenu index="about" :key="index">
+                <el-submenu :index="item.route" :key="index">
                     <template slot="title"><span class="complex-menu-icon"></span> {{item.name}}</template>
                     <el-menu-item :index="child.route" v-for="(child, childIndex) in item.children" :key="childIndex">{{child.name}}</el-menu-item>
                 </el-submenu>
@@ -62,7 +62,17 @@ export default {
                 },
                 {
                     name: '业务领域',
-                    route: 'businessList'
+                    route: 'businessList',
+                    children: [
+                        {
+                            name: '分支机构',
+                            route: 'businessList'
+                        },
+                        {
+                            name: '经营布局',
+                            route: 'layout'
+                        }
+                    ]
                 },
                 {
                     name: '业绩荣誉',

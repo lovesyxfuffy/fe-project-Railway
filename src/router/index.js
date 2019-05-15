@@ -7,84 +7,90 @@ Vue.use(Router)
 const publicPath = '/frontView'
 const getRouter = (module) => {
     const router = new Router({
-        mode: 'history',
+        // mode: 'history',
         routes: [
             {
                 name: 'root',
-                path: publicPath + '/',
+                path: '/',
                 meta: {title: '首页'},
                 component: () => import('../layouts/main.vue'),
-                redirect:   publicPath + '/home',
+                redirect: publicPath + '/home',
                 children: [
                     {
                         name: 'home',
-                        path:  'home',
+                        path: 'home',
                         meta: {title: '首页'},
                         component: () => import('@pages/home')
                     },
                     {
                         name: 'profile',
-                        path:  'about/profile',
+                        path: 'about/profile',
                         meta: {title: '公司简介'},
                         component: () => import('@components/details')
                     },
                     {
                         name: 'title',
-                        path:  'about/title',
+                        path: 'about/title',
                         meta: {title: '企业资质'},
                         component: () => import('@components/details')
                     },
                     {
                         name: 'culture',
-                        path:  'about/culture',
+                        path: 'about/culture',
                         meta: {title: '企业文化'},
                         component: () => import('@components/details')
                     },
                     {
                         name: 'speech',
-                        path:  'about/speech',
+                        path: 'about/speech',
                         meta: {title: '企业致辞'},
                         component: () => import('@components/details')
                     },
                     {
                         name: 'news',
-                        path:  'newsList',
+                        path: 'newsList',
                         meta: {title: '新闻列表'},
                         component: () => import('@pages/news/newsList')
                     },
                     {
                         name: 'article',
-                        path:  'article',
+                        path: 'article',
                         meta: {title: '文章详情'},
                         component: () => import('@components/details')
                     },
                     {
                         name: 'businessList',
-                        path:  'businessList',
+                        path: 'businessList',
                         meta: {title: '业务领域'},
                         component: () => import('@pages/business/businessList')
                     },
                     {
+                        name: 'layout',
+                        path: 'about/layout',
+                        meta: {title: '经营布局'},
+                        component: () => import('@components/details')
+                    },
+                    {
                         name: 'excellentList',
-                        path:  'excellentList',
+                        path: 'excellentList',
                         meta: {title: '精品工程'},
                         component: () => import('@pages/honor/excellentList')
                     },
                     {
                         name: 'careerPlanning',
-                        path:  'careerPlanning',
+                        path: 'careerPlanning',
                         meta: {title: '职业规划'},
                         component: () => import('@pages/careerPlanning')
                     },
                     {
                         name: 'information',
-                        path:  'information',
+                        path: 'information',
                         meta: {title: '中标信息'},
                         component: () => import('@pages/news/newsList')
                     },
                     {
                         name: 'notice',
-                        path:  'notice',
+                        path: 'notice',
                         meta: {title: '通知公告'},
                         component: () => import('@pages/news/newsList')
                     }
