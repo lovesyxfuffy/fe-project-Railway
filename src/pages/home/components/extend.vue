@@ -53,7 +53,7 @@ export default {
     methods: {
         toCareerPlanning() {
             this.$router.push({
-                name: 'careerPlanning'
+                name: 'hiring'
             })
         }
     }
