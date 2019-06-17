@@ -18,6 +18,14 @@
                 </ul>
             </el-col>
         </el-row>
+        <el-row style="background: rgb(245, 245, 245);
+    border-top: 1px solid rgb(136, 136, 136);
+    margin: 0px auto;
+    padding-top: 40px;
+    text-align: center;
+    margin-top: 30px;">
+            Copyright © 蜀ICP备19017824号 中铁成建设有限公司
+        </el-row>
     </el-main>
 </template>
 

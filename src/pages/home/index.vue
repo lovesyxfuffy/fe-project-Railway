@@ -5,6 +5,9 @@
         <excellent :excellentData="excellentData"></excellent>
         <extend :info="info"></extend>
         <friend-site-list :list="links"></friend-site-list>
+        <el-row style="background: #f5f5f5; margin: 0 auto; padding: 10px 0; text-align: center">
+            Copyright © 蜀ICP备19017824号 中铁成建设有限公司
+        </el-row>
     </div>
 </template>
 
