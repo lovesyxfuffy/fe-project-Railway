@@ -6,7 +6,9 @@
         <extend :info="info"></extend>
         <friend-site-list :list="links"></friend-site-list>
         <el-row style="background: #f5f5f5; margin: 0 auto; padding: 10px 0; text-align: center">
-            Copyright © 蜀ICP备19017824号 中铁成建设有限公司
+           	<div style="width:300px;margin:0 auto; padding:20px 0;">
+		 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010502010893" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="@imgs/copyright.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">川公网安备 51010502010893号</p></a>
+		 	</div>
         </el-row>
     </div>
 </template>
