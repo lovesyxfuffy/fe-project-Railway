@@ -11,7 +11,7 @@ const getRouter = (module) => {
         routes: [
             {
                 name: 'root',
-                path: '/',
+                path: publicPath+'/',
                 meta: {title: '首页'},
                 component: () => import('../layouts/main.vue'),
                 redirect: publicPath + '/home',
