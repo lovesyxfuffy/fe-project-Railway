@@ -18,6 +18,18 @@
                 </ul>
             </el-col>
         </el-row>
+        <el-row style="background: rgb(245, 245, 245);
+    border-top: 1px solid rgb(136, 136, 136);
+    margin: 0px auto;
+    padding-top: 40px;
+    text-align: center;
+    margin-top: 30px;">
+            <div style="width:300px;margin:0 auto; padding:20px 0;">
+		 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010502010893" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                 <img src="@imgs/copyright.png" style="float:left;"/>
+                 <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">川公网安备 51010502010893号</p></a>
+		 	</div>
+        </el-row>
     </el-main>
 </template>
 
