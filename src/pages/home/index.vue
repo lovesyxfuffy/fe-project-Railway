@@ -11,7 +11,7 @@
                 <span style="color:#939393;">Copyright © 2019 ztcjs.com.cn 中铁成建设</span><br>
                 <img src="@imgs/copyright.png" style="float:left; margin-top: 5px"/>
                 <p style="float:left;height:20px;line-height:20px;margin: 5px 0px 0px 5px; color:#939393;"> 
-                    版权所有 ICP证： 蜀ICP备19017824号
+                    川公网安备： 51010502010893号 版权所有 ICP证： 蜀ICP备19017824号
                 </p></a>
 		 	</div>
         </el-row>
