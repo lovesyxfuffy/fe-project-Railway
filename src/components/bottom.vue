@@ -26,11 +26,15 @@
     margin-top: 30px;">
             <div style="width:300px;margin:0 auto; padding:20px 0;">
 		 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010502010893" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-                <span style="color:#939393;">Copyright © 2019 ztcjs.com.cn 中铁成建设</span><br>
-                <img src="@imgs/copyright.png" style="float:left; margin-top: 5px"/>
-                <p style="float:left;height:20px;line-height:20px;margin: 5px 0px 0px 5px; color:#939393;"> 
+                <span style="color:#939393;">Copyright © 2019 ztcjs.com.cn 中铁成建设</span>
+                <p style="float:left;height:20px;line-height:20px;margin: 5px 0px 0px 5px; color:#939393;">
                     版权所有 ICP证： 蜀ICP备19017824号
                 </p></a>
+                <br>
+                <div style="width:300px;margin:0 auto; padding:20px 0;">
+                    <img src="@imgs/copyright.png" style="float:left; margin-top: 5px"/>
+                    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010502010893" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">川公网安备 51010502010893号</p></a>
+                </div>
 		 	</div>
         </el-row>
     </el-main>
