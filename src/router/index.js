@@ -19,7 +19,7 @@ const getRouter = (module) => {
                     {
                         name: 'home',
                         path: 'home',
-                        meta: {title: '首页'},
+                        meta: {title: '官网'},
                         component: () => import('@pages/home')
                     },
                     {
